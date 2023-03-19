@@ -1,0 +1,79 @@
+* {
+  font-family: "Poppins";
+}
+
+body {
+  padding-right: 400px;
+  padding-left: 400px;
+}
+
+body h1 {
+  font-weight: 300;
+}
+
+.Isi {
+  background-color: #eeecec;
+  display: inline-block;
+  padding: 8px 20px 30px;
+  font-weight: 600;
+}
+
+.weight {
+  line-height: 10px;
+}
+
+.input {
+  width: 700px;
+}
+
+#btn,
+#reset {
+  border: none;
+  border-radius: 4px;
+}
+
+#btn {
+  background-color: #67a1e3;
+  width: 100px;
+  height: 30px;
+  color: white;
+}
+
+#reset {
+  background-color: white;
+  width: 60px;
+  height: 30px;
+}
+
+.text2 h2 {
+  font-weight: 300;
+}
+
+span {
+  color: red;
+}
+
+.result {
+  background-color: #eeecec;
+  padding: 20px;
+  justify-content: center;
+}
+
+.result h1 {
+  text-align: center;
+}
+
+.hasil_bmi {
+  background-color: #67a1e3;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  width: 150px;
+  height: 35px;
+  margin-left: 250px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 0 0 0;
+}
