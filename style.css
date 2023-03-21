@@ -1,29 +1,81 @@
+:root {
+  --primary: #ce7636;
+  --bg: #010101;
+}
+
 * {
-  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 body {
-  padding-right: 400px;
-  padding-left: 400px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
 }
 
-body h1 {
-  font-weight: 300;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.7);
+  border-bottom: 1px solid #593419;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+span {
+  color: red;
+}
+
+.hero {
+  min-height: 50vh;
+  padding: 0 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text p {
+  text-align: justify;
+}
+
+.fom {
+  padding: 0rem 8rem;
 }
 
 .Isi {
-  background-color: #eeecec;
   display: inline-block;
-  padding: 8px 20px 30px;
+  padding: 0px 20px 30px;
   font-weight: 600;
-}
-
-.weight {
-  line-height: 10px;
+  top: 0;
 }
 
 .input {
-  width: 700px;
+  display: block;
+  width: 50rem;
 }
 
 #btn,
@@ -34,46 +86,124 @@ body h1 {
 
 #btn {
   background-color: #67a1e3;
-  width: 100px;
-  height: 30px;
   color: white;
+  width: 5rem;
+  top: auto;
+  height: 2.5rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 #reset {
   background-color: white;
-  width: 60px;
-  height: 30px;
+  width: 5rem;
+  top: 1rem;
+  line-height: 0.8rem;
 }
 
-.text2 h2 {
+.text h2 {
   font-weight: 300;
+  text-align: start;
 }
 
-span {
-  color: red;
-}
-
-.result {
-  background-color: #eeecec;
-  padding: 20px;
+.fitur {
+  min-height: 50vh;
+  padding: 0 8rem;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.result h1 {
+/* .wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 15px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+} */
+
+input{
+  outline: none;
+  border: none;
+  padding: 0.8rem;
+}
+
+.text p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.text h2 {
+  line-height: 7;
+}
+
+.hasil {
+  display: block;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 4rem;
 }
 
 .hasil_bmi {
   background-color: #67a1e3;
-  border: none;
-  color: white;
-  border-radius: 4px;
-  width: 150px;
-  height: 35px;
-  margin-left: 250px;
+  width: 8.5rem;
+  height: 2rem;
+  border-radius: 5px;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 50px 0 0 0;
+  padding: 0.4rem 0 2rem;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer p img {
+  width: 1rem;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .input {
+    width: 55rem;
+  }
+
+  input{
+    padding: 0.6rem;
+  }
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  html {
+    font-size: 55%;
+  }
+  .input {
+    width: 35rem;
+  }
+  input{
+    padding: 0.4rem;
+  }
+
 }
